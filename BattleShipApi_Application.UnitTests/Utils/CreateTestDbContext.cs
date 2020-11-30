@@ -23,11 +23,11 @@ namespace BattleShipApi_Application.UnitTests.Utils
             var context = new BattleShipApiDbContext(options);
             var board = new Board(10, 10);
             context.Boards.Add(board);
-            context.Boards.Add(new Board(5, 5));
-            //context.Squares.Add(new Square(10, 1));
-            //context.Positions.Add(new Position(10, 1));
+            context.Squares.Add(new Square(10, 1));
+            context.Positions.Add(new Position(10, 1));
 
             context.Database.EnsureCreated();
+            context.SaveChanges();
             return context;
 
         }

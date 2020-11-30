@@ -27,7 +27,7 @@ namespace BattleShipApi_Application.UnitTests.Features.Ship
         public async Task Handle_AddShipCommand_ThrowsException()
         {
             // Arrange
-            var command = new AddShipCommand { BoardId = 2, ShipPositionX = 4, ShipPositionY = 4 };
+            var command = new AddShipCommand { BoardId = 3, ShipPositionX = 4, ShipPositionY = 4 };
             var handler = new AddShipCommandHandler(_context);
 
             // Act

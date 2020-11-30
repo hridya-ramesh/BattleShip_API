@@ -15,7 +15,7 @@ namespace BattleShipApi_Application.UnitTests.Features.Attack
         public async Task Handle_AttackCommand_ReturnsResponse()
         {
             // Arrange
-            var command = new AttackCommand {  BoardId =2, AttackPositionX = 1, AttackPositionY = 4 };
+            var command = new AttackCommand {  BoardId =1, AttackPositionX = 10, AttackPositionY = 1 };
             var handler = new AttackCommandHandler(_context);
 
             // Act
